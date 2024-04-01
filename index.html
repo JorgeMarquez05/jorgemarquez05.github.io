@@ -2,15 +2,65 @@
 <html>
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1'0">
+	<title>Personal Web</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-	<h1>Hola Mundo</h1>
-	<h2>Esta es mi Pagina Web Personal</h2>
-	<h2>Estudio en la escuela 42Lisboa</h2>
-
+	<nav>
+		<label class="logo">Jorge <span class="logospan">Márquez</span></label>
+		<ul>
+			<li class="hideOnMobile"><a href="#">Home</a></li>
+			<li class="hideOnMobile"><a href="#">About me</a></li>
+			<li class="hideOnMobile"><a href="#">Projects</a></li>
+			<li class="hideOnMobile"><a href="#">Contact</a></li>
+			<li class="menubutton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+						viewBox="0 -960 960 960" width="26">
+						<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+					</svg>
+		</ul>
+		<ul class="sidebar">
+			<li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+						viewBox="0 -960 960 960" width="26">
+						<path
+							d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+					</svg></a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About me</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Contact</a></li>
+			</li>
+		</ul>
+	</nav>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>Home</h4>
+				</div>
+				<div class="footer-col">
+					<h4>Projects</h4>
+				</div>
+				<div class="footer-col">
+					<h4>About me</h4>
+				</div>
+				<div class="footer-col">
+					<h4>Contact</h4>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+		function showSidebar() {
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = 'flex'
+		}
+		function hideSidebar() {
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = 'none'
+		}
+	</script>
 </body>
 
 </html>
