@@ -43,7 +43,7 @@ nav ul li a {
 	text-transform: uppercase;
 }
 
-a:hover {
+header a:hover {
 	background: #1b9bff;
 	transition: .5s;
 }
@@ -124,6 +124,12 @@ a:hover {
 	text-transform: capitalize;
 	margin-bottom: 10px;
 	position: relative;
+}
+.footer-col h4 a{
+	color: #ffff;
+}
+.footer-col a:hover{
+	padding: 15px;
 }
 .footer-col h4::before{
 	content: '';
