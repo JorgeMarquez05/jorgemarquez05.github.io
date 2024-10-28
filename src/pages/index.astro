@@ -1,12 +1,38 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import LinkedInIcon from "../components/Icons/LinkedIn.astro";
+import GithubIcon from "../components/Icons/Github.astro"
+import MailIcon from "../components/Icons/Mail.astro";
+import Social from "../components/Social.astro";
 ---
 
-<Layout title="PortFolio">
+<Layout title="Portfolio de Jorge Márquez - Software Developer"
+description="Consider hiring Jorge Márquez as a software developer for your company. With a passion for technology and a commitment to excellence">
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-44 ">
-			<h1 class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-4">Hey, I'm Jorge Marquez</h1>
-			<h2 class="text-2xl opacity-80 text-wrap">Student, of software development.</h2>
+		<section class="w-full mx-auto lg:w-[740px] py-44 justify-center items-center">
+			<h1 class="text-white text-5xl font-bold gap-x-4 pb-4 ">
+				Hey, I'm Jorge Márquez
+			</h1>
+			<h2 class="text-2xl opacity-80 text-wrap flex">
+				I'm currently a student in software development, focusing on building my skills.
+			</h2>
+			<ul class="flex gap-x-5 mt-8">
+				<li>
+					<Social href="https://www.linkedin.com/in/jorge-m%C3%A1rquez/">
+						<LinkedInIcon class="w-6 h-6"/>LinkedIn
+					</Social>
+				</li>
+				<li>
+					<Social href="https://github.com/JorgeMarquez05/">
+						<GithubIcon class="w-6 h-6"/>Github
+					</Social>
+				</li>
+				<li>
+					<Social >
+						<MailIcon class="size-6"/>jorgemiliano91@gmail.com
+					</Social>
+				</li>
+			</ul>
 		</section>
 	</main>
 </Layout>
