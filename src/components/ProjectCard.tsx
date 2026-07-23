@@ -6,9 +6,9 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
 	return (
-		<div className="p-6 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-800/50 transition-all group flex flex-col justify-between ">
+		<div className="relative p-6 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-800/50 transition-all group flex flex-col justify-between ">
 			<div>
-				<div>
+				<div className="flex items-center justify-between gap-4">
 					<h3>{project.title}</h3>
 					{project.githubUrl && (
 						<a
@@ -16,7 +16,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label={`View ${project.title} source code on GitHub`}
-							className="text-slate-400 hover:text-sky-400 transition-colors">
+							className="text-slate-400 hover:text-sky-400 transition-colors before:absolute before:inset-0">
 							<svg
 								className="w-5 h-5"
 								fill="currentColor"
