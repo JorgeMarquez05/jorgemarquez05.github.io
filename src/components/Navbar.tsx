@@ -5,7 +5,7 @@ export default function Navbar() {
 				<a
 					href="#"
 					className="text-xl font-bold text-sky-400 hover:text-sky-300 transition">
-					JorgeMarquez<span className="text-white">.dev</span>
+					Jorge Márquez
 				</a>
 				<nav className="flex gap-6 text-sm font-medium text-slate-300">
 					<a
